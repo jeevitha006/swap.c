@@ -1,0 +1,15 @@
+/*program to swap two numbers without using a temporary variable*/
+#include<stdio.h>
+void main()
+{
+int a,b;
+printf("enter a and b values:");
+scanf("%d %d",&a,&b);
+a=a*b; 
+b=a/b; //b=a/b means b=(a*b)/b i.e,b=a
+a=a/b; //a=a/b means a=(a*b)/a (becoz b=a) i.e.,a=b
+printf("\nafter swapping  the result of a is %d",a); 
+printf("\nafter swapping the result b is %d",b);
+return 0;
+}
+ 
